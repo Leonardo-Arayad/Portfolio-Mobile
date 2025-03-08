@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Portfolio",
+    "slug": "Portfolio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "assets/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.larayad.APPTEST"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "110512fe-ca5d-45f3-b9d6-5b7ef038dc23"
+      }
+    },
+    "sdkVersion": "52.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
