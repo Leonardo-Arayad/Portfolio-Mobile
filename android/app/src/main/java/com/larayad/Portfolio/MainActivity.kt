@@ -1,4 +1,4 @@
-package com.portfolio
+package com.larayad.Portfolio
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

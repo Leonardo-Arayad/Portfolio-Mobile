@@ -3,7 +3,7 @@ import { ExpoConfig, ConfigContext } from '@expo/config';
 export default ({ config }: ConfigContext): ExpoConfig => ({
     ...config,
     name: "CVAPP",
-    slug: "Portfolio",
+    slug: "portfolio",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/icon.png",
@@ -14,6 +14,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         backgroundColor: "#ffffff"
     },
     assetBundlePatterns: ["assets/*"],
+    platforms: ["android"],
     ios: {
         supportsTablet: true,
         bundleIdentifier: "com.larayad.Portfolio"
@@ -30,13 +31,12 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     },
     extra: {
         eas: {
-            projectId: "110512fe-ca5d-45f3-b9d6-5b7ef038dc23"
-        }
+            projectId: "b884ed16-addb-4615-ba31-c1752db84e43"
+        },
     },
     updates: {
+        url: "https://u.expo.dev/b884ed16-addb-4615-ba31-c1752db84e43",
         fallbackToCacheTimeout: 0
     },
-    runtimeVersion: {
-        policy: "sdkVersion"
-    }
+    runtimeVersion: "1.0.0"
 });
