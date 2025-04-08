@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { StyleSheet, Animated, View } from 'react-native';
 import { Card, Text } from 'react-native-paper';
 import { useFonts } from "expo-font";
-import { useAppTheme } from '../App'; // Importamos el hook de tema
+import { useAppTheme } from '../Components/theme-context'; // Importamos el hook de tema
 
 const CARD = ({ source, titulo, contenido, date, isExpanded }: {
     source?: string;

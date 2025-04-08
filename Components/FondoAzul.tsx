@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Dimensions } from 'react-native';
 import Svg, { Path, Defs, LinearGradient, Stop } from 'react-native-svg';
-import { useAppTheme } from '../App';
+import { useAppTheme } from './theme-context';
 
 const { width } = Dimensions.get('window');
 const height = 180;

@@ -1,6 +1,5 @@
-import React, { useCallback, useState, createContext, useContext, useEffect } from 'react';
-import { StyleSheet, View, ScrollView, useColorScheme, RefreshControl, TouchableOpacity } from 'react-native';
-import { Provider, DefaultTheme, MD3DarkTheme } from 'react-native-paper';
+import React, { useCallback, useState } from 'react';
+import { StyleSheet, View, ScrollView, RefreshControl, TouchableOpacity } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { MaterialIcons } from '@expo/vector-icons';
 import CARD from './Components/Card';
@@ -8,33 +7,7 @@ import AddCard from './Components/AddCard';
 import Island from './Components/Island';
 import FondoAzul from './Components/FondoAzul';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
-export interface ThemeContextType {
-  isDarkMode: boolean;
-  theme: typeof DefaultTheme;
-  toggleTheme?: () => void;
-}
-
-export const ThemeContext = createContext<ThemeContextType>({
-  isDarkMode: false,
-  theme: DefaultTheme,
-});
-
-export const useAppTheme = () => useContext(ThemeContext);
-
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const colorScheme = useColorScheme();
-  const isDarkMode = colorScheme === 'dark';
-  const theme = isDarkMode ? MD3DarkTheme : DefaultTheme;
-
-  return (
-    <ThemeContext.Provider value={{ isDarkMode, theme }}>
-      <Provider theme={theme}>
-        {children}
-      </Provider>
-    </ThemeContext.Provider>
-  );
-};
+import {ThemeProvider, useAppTheme} from './Components/theme-context';
 
 
 export default function App() {

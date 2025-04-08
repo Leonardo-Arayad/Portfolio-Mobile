@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text, StyleSheet, Modal, Keyboard, TouchableWithoutFeedback } from 'react-native';
-import { useAppTheme } from '../App'; 
+import { useAppTheme } from '../Components/theme-context'; 
 import { BlurView } from 'expo-blur';
 
 const AddCard = ({ visible, onClose, onAddCard }: { visible: boolean; onClose: () => void; onAddCard: (newCard: any) => void }) => {

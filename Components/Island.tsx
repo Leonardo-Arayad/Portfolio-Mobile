@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Linking, Dimensions } from "react-native";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
-import { useAppTheme } from '../App'; 
+import { useAppTheme } from '../Components/theme-context'; 
 
 const { width } = Dimensions.get("window");
 
